@@ -1,0 +1,35 @@
+// Pour initialiser le projet
+git clone "URL du projet"
+
+
+// Methode pour envoyer des modifications
+
+// Pour récupérer la vesion du serveur
+git pull
+
+// Pour ajouter les modification dans un bagage à envoyer
+// Il peux y avoir plusieur fichier à la suite ou un chemin telle que dossier/monfichier
+git add "monfichier"
+
+// On peux également selectionner tout les fichier à ajouter avec le symbole *
+git add "mondossier"/*
+
+// Après l'ajout on doit nommer le bagage à envoyer
+git commit -m "message de description"
+
+// On peux envoyer le bagage pour mettre a jour la version du serveur avec la commande ci dessous
+git push
+
+
+
+// Methode annexe
+// On peux supprimer un fichier/repertoire sur le serveur de la même manière que le git add
+// Après, il faut faire de la même manières que le git add (commit et push)
+git rm "monfichier"
+git rm -r "monRepertoire"
+
+// On peux verifier que la version qu'on va ajouter n'a pas de soucis
+git status
+
+// Il existe aussi une commande pour les conflit, à voir sur le net
+git merge
