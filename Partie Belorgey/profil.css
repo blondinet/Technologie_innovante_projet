@@ -10,51 +10,47 @@ body {
 
 h1 {
     color: #1d1643;
-    font-size: 4em;
+    font-size: 4vh;
 }
 
 h2 {
     color: #1d1643;
-    font-size: 1.3em;
-    margin: 0.5em 0em;
+    font-size: 4vw;
+    margin: 1vh;
 }
 
 h3 {
     color: #ffffff;
-    font-size: 3.6em;
-    margin: 0.5em 0.4em;
+    font-size: 5vw;
+    margin: 1.3vh;
 }
+
+h3:hover {color: #a1a1a18e;}
 
 .sep {
     color: #1d1643;
-    font-size: 5em;
+    font-size: 10vw;
+    margin: 1vh;
 }
 
-#name {
-    color: #d87d7e;
-}
+#name {color: #d87d7e;}
 
 /* Main buttons */
 .profilebutton {
     border-radius: 30px;
     background-color: #ffffff;
-    margin:30px 25px;
-    color: #1d1643;
-    font-size: 1.8em;
+    margin:2vh;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 3px 10px 0 rgba(0,0,0,0.10);
-    width: 40%;
+    width: 39vw;
 }
+
+.profilebutton:hover {background-color: #a1a1a18e;}
 
 .imagebutton {
     border-radius: 40px 40px 0px 0px;
-    max-width: 100%;
+    max-width: 38vw;
     height: auto;
-}
-
-.textdecobutton {
-    color: #1d1643;
-    font-size: 1.8em;
 }
 
 /* Log out button */
