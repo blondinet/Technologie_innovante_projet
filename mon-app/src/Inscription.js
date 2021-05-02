@@ -39,7 +39,7 @@ return (
     src="./LogoBlanc.svg"
     alt="Cook, Eat and Connect logo avec un coeur"
     height="auto"
-    width="192px" />
+    width="256 px" />
     <h1 class="h1 color-primary "> <strong> Inscription </strong> </h1>
     
     <p class = "color-primary"><strong>  Devenez membre de Cook, Eat and Connect et profitez de recettes saines sur mesure !</strong></p>

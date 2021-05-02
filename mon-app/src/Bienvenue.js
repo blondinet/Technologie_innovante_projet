@@ -35,7 +35,7 @@ return (
         src="./LogoBlanc.svg"
         alt="Cook, Eat and Connect logo avec un coeur"
         height="auto"
-        width="192px" />
+        width="256 px" />
         <h1 class="h1 color-primary"> <strong>  Bienvenue </strong> </h1>
         <form method="post" action="">
             <label for="Email"></label>
@@ -47,15 +47,18 @@ return (
              <i onClick={""}>{eye}</i>
               </div>
             </div>
-            <div class="text-start mb-4">
-              <a class="btn btn-link text-start color-primary" href="/mdpoublie">Mot de passe oublié ?</a>
+            <div class="text-left mb-4">
+              <a class="btn btn-link text-left color-primary" href="/mdpoublie">Mot de passe oublié ?</a>
             </div>
             <div class="button">
-            <button class="btn btn-primary" type="submit">Connexion</button>
+            <button class="btn btn-primary btn-lg " type="submit">Connexion</button>
           </div>
-        <div class="my-2"> <strong>ou </strong> </div>
+          <br />
+        <h6 class="color-primary"> <strong>     OU   </strong>    </h6>
+        <br />
+        <br />
           <div class="button">
-            <a class="btn btn-primary" href="./Inscription">S'incrire</a>
+            <a class="btn btn-primary btn-lg" href="./Inscription">S'incrire </a>
           </div>
       </form>
     </div>
