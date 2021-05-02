@@ -9,16 +9,16 @@ var open = false;
 export default class App extends React.Component {
   render (){
     // essential dans le render ()
-    var open = false;
+    // var open = false;
     //const [passwordShown, setPasswordShown];
 
-    const togglePasswordVisiblity = () => {
-      this.setState({ passwordShown: this.state.passwordShown ? false : true});
-      setPasswordShown(passwordShown ? false : true);
-      console.log(open);
-      open = open ? false : true;
-      console.log(open);
-    };
+    //const togglePasswordVisiblity = () => {
+      //this.setState({ passwordShown: this.state.passwordShown ? false : true});
+      //setPasswordShown(passwordShown ? false : true);
+      //console.log(open);
+      //open = open ? false : true;
+      //console.log(open);
+    
 return (
   <div ClassName ="App">
   <html class="bg-body">
@@ -44,7 +44,7 @@ return (
             <div class="input-group">
               <input class="form-control" type={open ? "text" : "password"} name="pass" placeholder="Mot de passe" id="pass" />
               <div class="input-group-text">
-                <i onClick={togglePasswordVisiblity}>{eye}</i>
+             <i onClick={""}>{eye}</i>
               </div>
             </div>
             <div class="text-start mb-4">
