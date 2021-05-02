@@ -25,43 +25,43 @@ export default class App extends React.Component {
 
 return (
   <div ClassName ="App">
-  <html class="bg-body">
+  <html className="bg-body">
   <head>
     <meta charset="utf-8" />
     <title>Cook, Eat & Connect</title>
   </head>
 
-  <body class="bg-body">
-    <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xl-4 col-md-5 col-sm-8 col-10 text-center">
+  <body className="bg-body">
+    <div className="container">
+    <div className="row justify-content-center">
+      <div className="col-xl-4 col-md-5 col-sm-8 col-10 text-center">
     <img
     src="./LogoBlanc.svg"
     alt="Cook, Eat and Connect logo avec un coeur"
     height="auto"
     width="192px" />
-    <h1> C'est bien vous! </h1>
-    <p> Merci d'avoir suivi le lien magique. Vous pouvez à présent renseigner un nouveau mot de passe!</p>
+    <h1 className="h1 color-primary"> <strong>  C'est bien vous ! </strong> </h1>
+    <p className = "color-primary text-justify"> Merci d'avoir suivi le lien magique. Vous pouvez à présent <span className="text-white"> renseigner un nouveau mot de passe!</span> </p>
     <form method="post" action="">
    
     <label for="pass"></label>
-            <div class="input-group">
-              <input class="form-control" type={open ? "text" : "password"} name="pass" placeholder="Mot de passe" id="pass" />
-              <div class="input-group-text">
+            <div className="input-group">
+              <input className="form-control" type={open ? "text" : "password"} name="pass" placeholder="Mot de passe" id="pass" />
+              <div className="input-group-text">
                 <i onClick={togglePasswordVisiblity}>{eye}</i>
                 </div>
             </div>
 
       <label for="confirmepass"></label>
-            <div class="input-group">
-              <input class="form-control" type={open ? "text" : "password"} name="confirmepass" placeholder="Confirmer le mot de passe" id="confirmepass" />
-              <div class="input-group-text">
+            <div className="input-group">
+              <input className="form-control" type={open ? "text" : "password"} name="confirmepass" placeholder="Confirmer le mot de passe" id="confirmepass" />
+              <div className="input-group-text">
                 <i onClick={toggleVerifpass}>{eye}</i>
                 </div>
             </div>
-  
-     <div class="button">
-     <button class="btn btn-primary" type="submit"> Envoyer ! </button>
+    <br/>
+     <div className="button">
+     <button className="btn btn-primary" type="submit"> Envoyer ! </button>
         </div>
         </form>
     </div>

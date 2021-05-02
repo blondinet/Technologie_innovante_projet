@@ -12,6 +12,7 @@ import Inscription from "./Inscription";
 import InscriptionProfil from "./InscriptionProfil";
 import mdpoublie from "./mdpoublie";
 import Recupmdp from "./Recupmdp";
+import listeRose from "./listeRose";
 
 class App extends Component {
   constructor() {
@@ -62,6 +63,7 @@ class App extends Component {
               <Route exact path="/InscriptionProfil" component={InscriptionProfil} />
               <Route exact path="/mdpoublie" component={mdpoublie} />
               <Route exact path="/Recupmdp" component={Recupmdp} />
+              <Route exact path="/listeRose" component={listeRose} />
             </Switch>
           </div>
         </Router>
