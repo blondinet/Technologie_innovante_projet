@@ -13,6 +13,14 @@ import InscriptionProfil from "./InscriptionProfil";
 import mdpoublie from "./mdpoublie";
 import Recupmdp from "./Recupmdp";
 import listeRose from "./listeRose";
+import InscriptionMontre from "./InscriptionMontre";
+
+import 'bootstrap';
+import 'jquery';
+import 'popper.js';
+import 'bootstrap-select';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-select/dist/css/bootstrap-select.min.css';
 
 class App extends Component {
   constructor() {
@@ -64,6 +72,8 @@ class App extends Component {
               <Route exact path="/mdpoublie" component={mdpoublie} />
               <Route exact path="/Recupmdp" component={Recupmdp} />
               <Route exact path="/listeRose" component={listeRose} />
+              <Route exact path="/InscriptionMontre" component={InscriptionMontre} />
+           
             </Switch>
           </div>
         </Router>

@@ -70,15 +70,14 @@ onChange={this.handlePasswordChange} name="pass" placeholder="Mot de passe" id="
 {/* <div className="input-group-text">
   <i onClick={this.toggleShow}>{eye}</i>
 </div> */}
-
-
-<br />
+</div>
 <p className="text-left color-white font-weight-light" > <small><em>En cliquant sur <strong> Je deviens membre!</strong> Vous confirmez avoir lu et approuvé <strong> les conditions d'utilisation </strong> </em> </small></p> 
+</div>
 <div className="button">
-<a className="btn btn-primary btn-lg" href="./InscriptionProfil"> Je deviens membre! </a>
-</div>
-</div>
-</div>
+            <button className="btn btn-primary btn-lg " type="submit">Je deviens membre !</button>
+          </div>
+
+
 </form>
 </div>
 </div>

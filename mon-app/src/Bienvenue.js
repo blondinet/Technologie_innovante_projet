@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import './bootstrap.css';
+// import './bootstrap.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
@@ -60,7 +60,12 @@ return (
               </div>
             </div>
 
-            
+            <div class="form-check text-left ">
+      <input type="checkbox" class="form-check-input" id="dropdownCheck"/>
+      <label class="form-check-label" for="dropdownCheck">
+        Se souvenir de moi
+      </label>
+     </div>
             <div className="text-left mb-4">
               <a className="btn btn-link text-left color-primary" href="/mdpoublie">Mot de passe oublié ?</a>
             </div>

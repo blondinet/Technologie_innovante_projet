@@ -40,3 +40,14 @@ h6:after { left: 150%; }
 select {
   border-radius: 4px !important;
 }
+
+
+body {
+  margin: 2rem 0rem !important;
+  
+  label {
+    color: $muted impor !important;
+    display: block !important;
+    margin-top: 2rem !important;
+  }
+}
