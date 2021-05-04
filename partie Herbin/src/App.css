@@ -19,6 +19,13 @@ body {
   background-color: white;
 }
 
+.text5 {
+  font-family: 'Lucida Grande';
+  font-weight: bolder;
+  font-size: 12px;
+  color: darkblue;
+}
+
 .text4 {
   font-family: 'Lucida Grande';
   font-size: 12px;
