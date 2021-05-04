@@ -3,31 +3,40 @@ import './App.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-const eye = <FontAwesomeIcon icon={faEye} />;
-//var open = false;
+const eye = <FontAwesomeIcon icon={faEye}/>;
+var open = false;
+var verifpass = false;
 export default class App extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
       hidden: true,
+      hiddenConfirm: true,
       password: '',
+      confirmPassword: ''
     };
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
     this.toggleShow = this.toggleShow.bind(this);
+    this.handlePasswordConfirmChange = this.handlePasswordConfirmChange.bind(this);
+    this.toggleConfirmShow = this.toggleConfirmShow.bind(this);
   }
   handlePasswordChange(e) {
     this.setState({ password: e.target.value });
   }
+  handlePasswordConfirmChange(e) {
+    this.setState({ confirmPassword: e.target.value });
+  }
   toggleShow() {
     this.setState({ hidden: !this.state.hidden });
   }
-
+  toggleConfirmShow() {
+    this.setState({ hiddenConfirm: !this.state.hiddenConfirm });
+  }
 
   render (){
     // essential dans le render ()
     
-    
-
 return (
   <div className ="App">
   <html className="bg-body">
@@ -53,35 +62,35 @@ return (
 <input className="form-control" type="text" name="Email" placeholder="Email" id="Email" />
 
 
-<label htmlFor="pass"></label>
-<div className="input-group">
+<label for="pass"></label>
+            
+            <div className="input-group">
+              <input className="form-control" type={this.state.hidden ? 'password' : 'text'} value={this.state.password}
+          onChange={this.handlePasswordChange} name="pass" placeholder="Confirmer le mot de passe" id="pass" />
+              <div className="input-group-text">
+                <i onClick={this.toggleShow}>{eye}</i>
+              </div>
+            </div>
 
+     
+      <label for="confirmepass"></label>
 
-<input className="form-control" type={this.state.hidden ? 'password' : 'text'} value={this.state.password}
-onChange={this.handlePasswordChange} name="pass" placeholder="Mot de passe" id="pass" />
-<div className="input-group-text">
-<i onClick={this.toggleShow}>{eye}</i>
-</div>
-
-
-<label htmlFor="confirmpass"></label>
-<div className="input-group mt-4">
-<input className="form-control" type="password" value="" name="confirmpass" placeholder="Confirmer le mot de passe" id="confpass" />
-{/* <div className="input-group-text">
-  <i onClick={this.toggleShow}>{eye}</i>
-</div> */}
-</div>
-<p className="text-left color-white font-weight-light" > <small><em>En cliquant sur <strong> Je deviens membre!</strong> Vous confirmez avoir lu et approuvé <strong> les conditions d'utilisation </strong> </em> </small></p> 
-</div>
-<div className="button">
-            <button className="btn btn-primary btn-lg " type="submit">Je deviens membre !</button>
-          </div>
-
-
-</form>
-</div>
-</div>
-</div>
-</body>
+            <div className="input-group">
+              <input className="form-control" type={this.state.hiddenConfirm ? 'password' : 'text'} value={this.state.confirmPassword}
+          onChange={this.handlePasswordConfirmChange} name="confirmpass" placeholder="Confirmer le mot de passe" id="confirmpass" />
+              <div className="input-group-text">
+                <i onClick={this.toggleConfirmShow}>{eye}</i>
+              </div>
+            </div>
+            <br />
+   <p class="text-left color-white font-weight-light" > <small><em>En cliquant sur <strong> Je deviens membre!</strong> Vous confirmez avoir lu et approuvé <strong> les conditions d'utilisation </strong> </em> </small></p> 
+     <div class="button">
+        <button class="btn btn-primary" type="submit"> Je deviens membre ! </button>
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+  </body>
 </html></div>
 );}}
