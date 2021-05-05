@@ -3,17 +3,39 @@ import './App.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
-const eye = <FontAwesomeIcon icon={faEye} />;
+const eye = <FontAwesomeIcon icon={faEye}/>;
 var open = false;
 var verifpass = false;
-
 export default class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      hidden: true,
+      hiddenConfirm: true,
+      password: '',
+      confirmPassword: ''
+    };
+    this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.toggleShow = this.toggleShow.bind(this);
+    this.handlePasswordConfirmChange = this.handlePasswordConfirmChange.bind(this);
+    this.toggleConfirmShow = this.toggleConfirmShow.bind(this);
+  }
+  handlePasswordChange(e) {
+    this.setState({ password: e.target.value });
+  }
+  handlePasswordConfirmChange(e) {
+    this.setState({ confirmPassword: e.target.value });
+  }
+  toggleShow() {
+    this.setState({ hidden: !this.state.hidden });
+  }
+  toggleConfirmShow() {
+    this.setState({ hiddenConfirm: !this.state.hiddenConfirm });
+  }
   render (){
-    // essential dans le render ()
-    //var open = false;
-    //const [passwordShown, setPasswordShown];
+  
     const togglePasswordVisiblity = () => {
-      //setPasswordShown(passwordShown ? false : true);
       console.log(open);
       open = open ? false : true;
       console.log(open);
@@ -45,21 +67,26 @@ return (
     <form method="post" action="">
    
     <label for="pass"></label>
+            
             <div className="input-group">
-              <input className="form-control" type={open ? "text" : "password"} name="pass" placeholder="Mot de passe" id="pass" />
+              <input className="form-control" type={this.state.hidden ? 'password' : 'text'} value={this.state.password}
+          onChange={this.handlePasswordChange} name="pass" placeholder="Nouveau mot de passe" id="pass" />
               <div className="input-group-text">
-                <i onClick={togglePasswordVisiblity}>{eye}</i>
-                </div>
+                <i onClick={this.toggleShow}>{eye}</i>
+              </div>
             </div>
 
+     
       <label for="confirmepass"></label>
+
             <div className="input-group">
-              <input className="form-control" type={open ? "text" : "password"} name="confirmepass" placeholder="Confirmer le mot de passe" id="confirmepass" />
+              <input className="form-control" type={this.state.hiddenConfirm ? 'password' : 'text'} value={this.state.confirmPassword}
+          onChange={this.handlePasswordConfirmChange} name="confirmpass" placeholder="Confirmer le mot de passe" id="confirmpass" />
               <div className="input-group-text">
-                <i onClick={toggleVerifpass}>{eye}</i>
-                </div>
+                <i onClick={this.toggleConfirmShow}>{eye}</i>
+              </div>
             </div>
-    <br/>
+            <br />
      <div className="button">
      <button className="btn btn-primary" type="submit"> Envoyer ! </button>
         </div>

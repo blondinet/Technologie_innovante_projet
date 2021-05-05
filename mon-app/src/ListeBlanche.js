@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-const eye = <FontAwesomeIcon icon={faSearch} />;
 
 export default class App extends React.Component {
 	
@@ -15,15 +14,10 @@ return (
     <meta charset="utf-8" />
     <title>Cook, Eat & Connect</title>
   </head>
-<body className="bg-body">>
+<body className="bg-white">
     <div className="container">
     <div className="row justify-content-center">
       <div className="col-xl-4 col-md-5 col-sm-8 col-10 text-center">
-    <img
-    src="./LogoBlanc.svg"
-    alt="Cook, Eat and Connect logo avec un coeur"
-    height="auto"
-    width="256 px" />
     <h1 className="h1 color-primary "> <strong> Ma liste </strong> </h1>
 	<br/>
 				<div className="row">
@@ -40,6 +34,9 @@ return (
 					</div>
 					<br/>
 					<br/>
+					<br/>
+					
+
 					<div className="col-5">
 						<a className="btn btn-primary" onClick={
 						function e(){
@@ -51,24 +48,9 @@ return (
 							+ Ajouter
 						</a>
 					</div>
-					<div className="text-black bg-white p-2 rounded"id="liste">
+					<div className="text-black bg-secondary p-2 rounded"id="liste">
 					</div>
-				</div>
-      
-				<br/>
-				<br/>
-            	<br />
-		    <div className="button">
-            <button className="btn btn-primary btn-lg " type="submit">Enregistrer</button>
-          <br />
-          <br />
-        <h6 className="color-primary"> <strong>     OU   </strong>    </h6>
-        <br />
-        <br />
-        <div className="button">
-          <a className="btn btn-link color-primary" href=""> Renseigner ultérieurement</a>
-          </div>
-          </div>     		
+				</div>    		
 		</div>
         </div>
 		</div>

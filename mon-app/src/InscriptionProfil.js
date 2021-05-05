@@ -23,7 +23,7 @@ return (
     alt="Cook, Eat and Connect logo avec un coeur"
     height="auto"
     width="256 px" />
-    <h1 className="h1 color-primary "> <strong> Inscription </strong> </h1>
+    <h1 className="h1 color-primary "> <strong> Mon Profil </strong> </h1>
     <form method="post" action="">
             <label for="Email"></label>
             <input className="form-control" type="text" name="datedenaissance" placeholder="Date de naissance" id="datedenaissance" />
@@ -41,12 +41,17 @@ return (
             <input className="form-control" type="text" name="Poids" placeholder="Poids en kg" id="Poids" />
             <label for="pass"></label>
             <br/>
-  <select id="select" className="form-control">
-  <option selected>Absence de régime particulier</option>
-  <option value="1">Sans gluten</option>
-  <option value="2">Végétarien</option>
-  <option value="3">Végétalien</option>
-</select>
+            <div className="row">
+					<div className="col-12">
+						<select class="selectpicker form-control" data-live-search="true" id="searchbar">
+							<option style={{display: 'none'}} value="" disabled selected>Ajouter un régime alimentaire</option>
+							<option data-tokens="Végétarien" value='one'>végétarien</option>
+							<option data-tokens="Végétalien">végétalien</option>
+							<option data-tokens="Sans gluten">sans gluten</option>
+							<option data-tokens="Flexitarien" value='one'>Flexitarien</option>
+						</select>
+					</div>
+          </div>
 <br/>
 <div className="button">
           <a className="btn btn-primary btn-lg" href="">Enregistrer </a>

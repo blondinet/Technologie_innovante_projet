@@ -14,7 +14,7 @@ import mdpoublie from "./mdpoublie";
 import Recupmdp from "./Recupmdp";
 import listeRose from "./listeRose";
 import InscriptionMontre from "./InscriptionMontre";
-
+import ListeBlanche from "./ListeBlanche";
 import 'bootstrap';
 import 'jquery';
 import 'popper.js';
@@ -73,7 +73,7 @@ class App extends Component {
               <Route exact path="/Recupmdp" component={Recupmdp} />
               <Route exact path="/listeRose" component={listeRose} />
               <Route exact path="/InscriptionMontre" component={InscriptionMontre} />
-           
+              <Route exact path="/ListeBlanche" component={ListeBlanche} />
             </Switch>
           </div>
         </Router>

@@ -66,7 +66,7 @@ return (
             
             <div className="input-group">
               <input className="form-control" type={this.state.hidden ? 'password' : 'text'} value={this.state.password}
-          onChange={this.handlePasswordChange} name="pass" placeholder="Confirmer le mot de passe" id="pass" />
+          onChange={this.handlePasswordChange} name="pass" placeholder="Mot de passe" id="pass" />
               <div className="input-group-text">
                 <i onClick={this.toggleShow}>{eye}</i>
               </div>
