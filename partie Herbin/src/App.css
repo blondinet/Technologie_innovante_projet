@@ -51,6 +51,7 @@ body {
 button {
   background-color: transparent;
   border: transparent;
+  vertical-align: middle;
 }
 
 .plat {

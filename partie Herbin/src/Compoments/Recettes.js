@@ -180,9 +180,31 @@ export default class Recettes extends React.Component {
     var str3 = str1 + nomPlat + str2;
     let score = Math.round(this.appreciation( nomPlat ));
 
+    var img = str1 + "0.png";
+
+    if (score === 1) {
+      img = str1 + "1.png";
+    }
+
+    if (score === 2) {
+      img = str1 + "2.png";
+    }
+
+    if (score === 3) {
+      img = str1 + "3.png";
+    }
+
+    if (score === 4) {
+      img = str1 + "4.png";
+    }
+
+    if (score === 5) {
+      img = str1 + "5.png";
+    }
+
     this.setState( { reference: nomPlat });
     this.setState( { image: str3 });
-    this.setState( { like: score });
+    this.setState( { like: img });
 
   }
 
@@ -236,7 +258,7 @@ export default class Recettes extends React.Component {
         }
       }
     }
-
+    
     for( var x = 0 ; x < result.length ; x++ )
     {
       PERSONNE.personnes[index].plats.push( result[x] );
@@ -266,9 +288,11 @@ export default class Recettes extends React.Component {
     this.affichage(nomPlat);
   }
 
+  componentDidMount = () => {
+    this.fonction1();
+  }
 
     render() {
-      // this.fonction1;
 
         return(
             <div className="Recettes">
@@ -280,7 +304,7 @@ export default class Recettes extends React.Component {
             <button type="submit" class="bouton">
                 <tr>
                   <th>
-                    <imput className="text3">›</imput>
+                    <img src="./Images/info.png" alt="Flowers in Chania" height="20"/>
                   </th>
                   <th width="10"></th>
                   <th>
@@ -288,7 +312,7 @@ export default class Recettes extends React.Component {
                   </th>
                   <th width="3000"></th>
                   <th>
-                    <imput className="text3">{this.state.like}/5</imput>
+                    <img className="imagePlat" src={this.state.like} alt="Flowers in Chania" height="15"/>
                   </th>
                 </tr>
             </button>
@@ -307,7 +331,7 @@ export default class Recettes extends React.Component {
                   <button type="submit" class="bouton" onClick = {this.fonction3}>  
                     <tr>
                       <th>
-                        <imput className="text3">X</imput>
+                        <img src="./Images/save.png" alt="Flowers in Chania" height="20"/>
                       </th>
                       <th width="5"></th>
                       <th>
@@ -325,11 +349,11 @@ export default class Recettes extends React.Component {
                   <button type="submit" class="bouton" onClick = {this.fonction3}>  
                     <tr>
                       <th>
-                        <imput className="text3">X</imput>
+                        <img src="./Images/clock.png" alt="Flowers in Chania" height="20"/>
                       </th>
                       <th width="5"></th>
                       <th>
-                        <imput className="text3">Plat suivant...</imput>
+                        <imput className="text3">Plus tard</imput>
                       </th>
                     </tr>
                   </button>
