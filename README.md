@@ -3,7 +3,7 @@ Voici notre rendu du projet de technologie innovante pour le groupe cuisine conn
 Notre groupe comprend :
 Rafaelle Belorgey, Julie Cunin, Aurelien Herbin, Xavier Jacob--Guizon
 
-Notre projet final est celui du répertoire "projet_reuni"
+Notre projet final est celui du répertoire "projet_reuni" qui contient également un pdf de présentation du projet
 
 Pour lancer l'application, il faut les différents modules suivants, en commentaire, installés sur le projet, puis executer yarn start
 
