@@ -1,7 +1,7 @@
 Voici notre rendu du projet de technologie innovante pour le groupe cuisine connectée.
 
 Notre groupe comprend :
-Rafael Belorgey, Julie Cunin, Aurelien Herbin, Xavier Jacob--Guizon
+Rafaelle Belorgey, Julie Cunin, Aurelien Herbin, Xavier Jacob--Guizon
 
 Notre projet final est celui du répertoire "projet_reuni"
 
