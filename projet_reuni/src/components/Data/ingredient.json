@@ -1,0 +1,76 @@
+{
+    "liste":
+    [
+        {
+            "nom": "tomate",
+            "calorie": 140,
+            "glucide": 20,
+            "lipide": 5,
+            "proteine": 5
+        },
+    
+        {
+            "nom": "poivron",
+            "calorie": 160,
+            "glucide": 30,
+            "lipide": 5,
+            "proteine": 10
+        },
+    
+        {
+            "nom": "aubergine",
+            "calorie": 100,
+            "glucide": 10,
+            "lipide": 10,
+            "proteine": 10
+        },
+    
+        {
+            "nom": "pate",
+            "calorie": 400,
+            "glucide": 60,
+            "lipide": 5,
+            "proteine": 60
+        },
+    
+        {
+            "nom": "riz",
+            "calorie": 200,
+            "glucide": 50,
+            "lipide": 5,
+            "proteine": 20
+        },
+    
+        {
+            "nom": "pomme_terre",
+            "calorie": 500,
+            "glucide": 60,
+            "lipide": 20,
+            "proteine": 10
+        },
+    
+        {
+            "nom": "oeuf",
+            "calorie": 200,
+            "glucide": 60,
+            "lipide": 20,
+            "proteine": 50
+        },
+    
+        {
+            "nom": "saumon",
+            "calorie": 400,
+            "glucide": 50,
+            "lipide": 30,
+            "proteine": 50
+        },
+    
+        {
+            "nom": "boeuf",
+            "calorie": 600,
+            "glucide": 70,
+            "lipide": 20,
+            "proteine": 50
+        }
+    ]
+}

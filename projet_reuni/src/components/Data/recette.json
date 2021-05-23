@@ -1,0 +1,34 @@
+{
+    "liste": 
+    [
+        {
+            "nom": "Paella",
+            "ingredient": ["riz", "riz", "poivron"],
+            "temps": 120
+        },
+    
+        {
+            "nom": "Riz au Saumon",
+            "ingredient": ["saumon", "riz"],
+            "temps": 60
+        },
+    
+        {
+            "nom": "Steak Frite",
+            "ingredient": ["boeuf", "pomme_terre"],
+            "temps": 30
+        },
+    
+        {
+            "nom": "Ratatouille",
+            "ingredient": ["aubergine", "tomate", "poivron"],
+            "temps": 240
+        },
+    
+        {
+            "nom": "Minestrone",
+            "ingredient": ["tomate", "poivron", "pate"],
+            "temps": 240
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{ 
+    "personnes": 
+    [
+        {
+            "id": 1,
+            "prenom": "John",
+            "nom": "Smith",
+            "taille": 1.80,
+            "poids": 60,
+            "age": 24,
+            "sexe": "male",
+            "activite": 250,
+            "plats": [],
+            "preference": 
+            {
+                "tomate": 3,
+                "poivron": 0,
+                "aubergine": 0,
+                "pate": 5,
+                "riz": 0,
+                "pomme_terre": 1,
+                "oeuf": 2,
+                "saumon": 2,
+                "boeuf": 0
+            },
+            "frigo": 
+            {
+                "tomate": true,
+                "poivron": true,
+                "aubergine": true,
+                "pate": true,
+                "riz": true,
+                "pomme_terre": true,
+                "oeuf": true,
+                "saumon": false,
+                "boeuf": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+body{
+    background-color: #D87D7E !important;
+}
+
+.derriere{
+    background-color: #D87D7E !important;
+    height:100vh;
+    width:100vw;
+    position:absolute;
+}

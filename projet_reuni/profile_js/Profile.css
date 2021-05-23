@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'MyRoboto';
+    src: url("../Roboto/Roboto-Bold.ttf");
+}
+
+body {
+    font-family: 'MyRoboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #1d1643;
+    font-size: 5vw;
+}
+
+h2 {
+    color: #1d1643;
+    font-size: 4vw;
+    /* font-size: max(30vw, 30px); */
+    margin: 1vh;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 4vh;
+    margin: 1.3vh 1vw;
+}
+
+@media screen and (min-width: 600px) {
+    h1  {
+        font-size: 40px;
+    } 
+    h2, h3 {
+       font-size: 25px;
+    }
+  }
+
+.sep {
+    color: #1d1643;
+    font-size: 5vw;
+    max-height: 5vw;
+    margin: 1vh;
+}
+
+#name {color: #d87d7e;}
+
+/* Main buttons */
+.profilebutton {
+    display: inline;
+    border-radius: 4vh;
+    background-color: #ffffff;
+    margin: 3vh;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 3px 10px 0 rgba(0,0,0,0.10);
+    width: 40vw;
+    max-width: 250px;
+    padding: initial;
+    cursor: pointer;
+}
+
+.profilebutton:hover {background-color: #a1a1a18e;}
+
+.imagebutton {
+    border-radius: 4vh 4vh 0vh 0vh;
+    width: 40vw;
+    max-width: 250px;
+    height: auto;
+}
+
+/* Log out button */
+.decobutton {
+    margin:3vh;
+    border-radius: 40px;
+    background-color: #1d1643;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), 0 3px 10px 0 rgba(0,0,0,0.10);
+}

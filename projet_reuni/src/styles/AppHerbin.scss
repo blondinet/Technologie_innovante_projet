@@ -1,0 +1,94 @@
+.Footer {
+  background-color: #d87d7e;
+  position: fixed;
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+}
+
+.Header {
+  height: 120px;
+}
+
+.center {
+  margin-left:auto;
+  margin-right: auto;
+}
+
+body {
+  // background-color: white;th>
+}
+
+
+.text3 {
+  font-family: 'Lucida Grande';
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.text2 {
+  font-family: 'Arial';
+  font-weight: bolder;
+  font-size: 20px;
+  color: darkblue;
+  left: 20px;
+  position: relative;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+}
+
+.plat {
+  margin-left:auto;
+  margin-right: auto;
+  background-color: lightgray;
+  width: 80%;
+  position: relative;
+  top: 20px;
+  text-align: left;
+}
+
+.platImage {
+  margin-left:auto;
+  margin-right: auto;
+  position: relative;
+  top: 30px;
+}
+
+.plat2 {
+  margin-left:auto;
+  margin-right: auto;
+  background-color: lightgray;
+  width: 100%;
+  position: relative;
+  top: 20px;
+}
+
+.plat1 {
+  margin-left:auto;
+  margin-right: auto;
+  width: 80%;
+  position: relative;
+  top: 20px;
+  text-align: left;
+}
+
+
+/**
+* Text du footer, les nom des boutons de redirection(textOut lorque ce n'est pas la page courante, textIn lorsqu'on est sur la page courant)
+*/
+.textIn{
+  font-family: 'Lucida Grande';
+  font-weight: bolder;
+  font-size: 12px;
+  color: darkblue;
+}
+
+.textOut {
+  font-family: 'Lucida Grande';
+  font-size: 12px;
+  color: white;
+}

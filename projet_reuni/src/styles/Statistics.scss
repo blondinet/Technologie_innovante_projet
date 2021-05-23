@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'MyRoboto';
+    src: url("../Roboto/Roboto-Bold.ttf");
+}
+
+body {
+    font-family: 'MyRoboto', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #1d1643;
+    font-size: 5vh;
+    margin: 3vh;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center;
+    margin: 10px;
+}
+
+select {
+    appearance: none;
+    border: none;
+    background: #dbd7d7;
+    color: #818181;
+    padding: 2vh 44vw 2vh 5vw;
+    border-radius: 40px;
+    background-image: url('../images/caret-down.svg');
+    background-size: 8vw;
+    background-repeat: no-repeat;
+    background-position: 98% 60%;
+}
+
+@media screen and (min-width: 600px) {
+    h1  {
+        font-size: 40px;
+    }
+    select {
+        padding: 10px 200px 10px 20px;
+        background-size: 40px;
+    }
+
+    #weekChart, #monthChart, #yearChart {
+        width: 600px !important;
+        height: 400px !important;
+    }
+  }
+
+#timeStats {
+    font-size: large;
+}
+
+#weekChart, #monthChart, #yearChart {
+    position: relative;
+    margin: 0 auto;
+    height: 50vh;
+    width: 90vw;
+}
